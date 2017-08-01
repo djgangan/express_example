@@ -4,5 +4,6 @@ node_js:
 deploy:
   provider: heroku
   app: express-example
+  clean_up: false
   api_key:
     secure: b677546a-220a-45d5-a9a4-ae5ab02e5b83
