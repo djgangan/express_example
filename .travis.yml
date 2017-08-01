@@ -1,8 +1,9 @@
 language: node_js
 node_js:
 - '0.10'
+travis encrypt $(heroku auth:4b119c6a-bff4-4da0-ac8d-b9f5edb741ad) --add deploy.api_key
 deploy:
   provider: heroku
-  app: express-tutorial
+  app: express-example
   api_key:
     secure: TLcy5QZ3SimYNndcIcUXYGKgWBDOYdfx6T9erNVZtOAnGvHK1b0g4rJnCYr19N0m5aBKE3Pkteq8zz6hPq+VhtnJRnv5FJ+krBLz5nZkaPdjuHyh1909jXdqSCnB8fNU6tjVavnnJSO9KY3rRbSDarsMTLAhXcPOGjIpj15FkAE=
